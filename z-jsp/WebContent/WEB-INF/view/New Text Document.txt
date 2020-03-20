@@ -1,0 +1,18 @@
+<%@ page errorPage="loginerror.jsp"%>
+<html><body><form method="get">
+UserName: <input type="text" name="user">
+PassWord: <input type="password" name="pass">
+<input type=submit value="Login">
+
+<%
+String user=request.getParameter("user");
+String pass=request.getParameter("pass");
+
+if(user="Ranji" && pass="comet"){
+out.println("Login Successful");
+}else{
+out.println("Login Unsuccessful");
+}
+
+%>
+</form></body></html>

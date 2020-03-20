@@ -1,0 +1,32 @@
+<html>
+<center>
+  <script language="javascript">
+			function validation() {
+				var username
+				username = prompt("Enter User Name", "username");
+
+				if (username == "ranjith") {
+					alert("Enter Password Now");
+					nam1 = prompt("Enter Password", "password");
+					if (nam1 == "ranji") {
+						return true;
+					} else {
+						alert("Incorrect password" + nam1);
+					}
+				} else {
+					alert("Invalid Login");
+					document.writeln("Intruder detected");
+				}
+			}
+		</script>
+  <form method="get" action="http://localhost:8080/examples/servlet/shoppinglogin" onSubmit="return validation()">
+    <body bgcolor="palegreen">
+      <h2>
+        Ranji's Shopping Cart
+        <h2>
+          <h3>Click below to Login</h3>
+          <input type=submit value="Login">
+</center>
+</form>
+</body>
+</html>
